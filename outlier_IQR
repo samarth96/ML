@@ -2,10 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
+dataset = pd.read_csv('SoldVehicles_2019_Oct.csv')
 pd.DataFrame(dataset)
 dataset.head()
 
+
 %matplotlib inline
+
+dataset.boxplot(return_type='dict')
+plt.plot()
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 dataset.columns
